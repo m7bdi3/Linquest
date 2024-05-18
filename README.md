@@ -109,5 +109,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Your Name - [@your_twitter](https://twitter.com/your_twitter) - <your_email@example.com>
 
 Project Link: [https://github.com/yourusername/questr](https://github.com/yourusername/questr)
-
-This README.md provides a comprehensive overview of the Questr Language Learning App, including its tech stack, key features, installation instructions, usage guidelines, contribution steps, license information, and contact details. Feel free to customize it further based on your specific project needs.
