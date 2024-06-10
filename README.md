@@ -1,111 +1,92 @@
-# Linquest Language Learning App
+# Linquest Project README
 
-Linquest is a dynamic language learning application designed to make language acquisition engaging and fun. With a plethora of features ranging from AI voices to interactive quests, Linquest ensures an immersive learning experience for users of all levels.
+## Overview
 
-## Tech Stack
-
-- **Framework:** Next.js 14
-- **ORM:** Drizzle ORM
-- **Database:** PostgreSQL (NeonDB)
-- **Server Actions:** Server-side logic and interactions
-- **Payment Processing:** Stripe
-- **UI Components:** ShadcnUI
-- **Styling:** Tailwind CSS
-- **Deployment:** Vercel
-- **Authentication:** Clerk
+Linquest is a quest-based language learning application that leverages interactive challenges to enhance the learning experience. The application is built with a modern tech stack and adheres to best practices in software development.
 
 ## Key Features
 
-- 🌐 **Next.js 14 & Server Actions:** Utilizes the latest Next.js features for server-side actions and optimizations.
-- 🗣 **AI Voices using Elevenlabs AI:** Provides high-quality AI-generated voices for pronunciation and dialogues.
-- 🎨 **Beautiful Component System using Shadcn UI:** Ensures a cohesive and visually appealing user interface.
-- 🎭 **Amazing Characters thanks to KenneyNL:** Engaging characters to guide and interact with users throughout their learning journey.
-- 🔐 **Auth using Clerk:** Secure and reliable authentication system.
-- 🔊 **Sound Effects:** Audio feedback to enhance the user experience.
-- ❤️ **Hearts System:** Gamified learning with a hearts system to manage lesson attempts.
-- 🌟 **Points / XP System:** Reward system to track and motivate progress.
-- 💔 **No Hearts Left Popup:** Notification system for when users run out of hearts.
-- 🚪 **Exit Confirmation Popup:** Ensures users do not lose progress accidentally.
-- 🔄 **Practice Old Lessons to Regain Hearts:** Allows users to review and practice previous lessons to earn back hearts.
-- 🏆 **Leaderboard:** Competitive element to track progress against other learners.
-- 🗺 **Quests Milestones:** Structured milestones to guide learning progress.
-- 🛍 **Shop System to Exchange Points with Hearts:** In-app economy for exchanging points earned for additional hearts.
-- 💳 **Pro Tier for Unlimited Hearts using Stripe:** Subscription model for unlimited learning sessions.
-- 🏠 **Landing Page:** Informative and attractive landing page to welcome new users.
-- 📊 **Admin Dashboard using React Admin:** Comprehensive dashboard for administrators to manage the app.
-- 🌧 **ORM using DrizzleORM:** Efficient database operations with Drizzle ORM.
-- 💾 **PostgresDB using NeonDB:** Robust and scalable database management.
-- 🚀 **Deployment on Vercel:** Seamless deployment and scaling with Vercel.
-- 📱 **Mobile Responsiveness:** Fully responsive design for mobile devices.
+- **Interactive Language Learning**: Engage with dynamic quests and challenges that make learning a new language fun and effective.
+- **AI Voices**: Utilize high-quality AI-generated voices for pronunciation and dialogue interactions.
+- **Gamification Elements**: Includes a points system, hearts system for lesson attempts, and a leaderboard to encourage competition and motivation.
+- **Comprehensive Admin Dashboard**: Manage users, courses, and content through a detailed admin interface.
+- **Mobile Responsiveness**: Fully responsive design ensures a seamless experience on all devices.
+- **Multi-Language Support**: Offers learning modules in multiple languages with appropriate localization.
+- **Secure Authentication**: Integrates Clerk for secure and reliable user authentication.
+- **Subscription Model**: Includes Stripe for handling subscriptions, allowing users to opt for a Pro tier with unlimited hearts.
+- **Server-Side Enhancements**: Leverages the latest Next.js features for server-side actions and optimizations.
 
-## Getting Started
+## Technology Stack
 
-To get a local copy up and running follow these simple steps.
+### Frontend
 
-### Prerequisites
+- **React**: A JavaScript library for building user interfaces.
+- **Next.js**: A React framework that enables functionalities such as server-side rendering and static site generation.
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
+- **TypeScript**: A superset of JavaScript that adds static types.
+- **Shadcn UI**: A UI component library for building high-quality, accessible design systems and web apps.
 
-Make sure you have the following installed:
+### Backend
 
-- Node.js
-- npm or yarn
-- PostgreSQL
+- **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine.
+- **Drizzle ORM**: An ORM for TypeScript and JavaScript.
+- **Neon Database**: A serverless PostgreSQL database service.
 
-### Installation
+### Tools and Libraries
 
-1. Clone the repo
+- **ESLint**: A static code analysis tool for identifying problematic patterns found in JavaScript code.
+- **PostCSS**: A tool for transforming CSS with JavaScript.
+- **Vercel**: A platform for frontend frameworks and static sites, built to integrate with your headless content, commerce, or database.
 
-   ```sh
-   git clone https://github.com/yourusername/Linquest.git
+### Development Tools
+
+- **VSCode**: Recommended editor with extensions like Tailwind CSS IntelliSense.
+- **Git**: Version control system.
+
+## Project Structure
+
+- `app/`: Contains the frontend application code including pages and components.
+- `scripts/`: Includes scripts for database seeding and other backend operations.
+- `public/`: Stores static files like images and SVGs.
+- `lib/`: Contains utility functions and shared libraries.
+
+## Setup and Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/m7bdi3/linquest.git
    ```
 
-2. Install NPM packages
+2. Install dependencies:
 
-   ```sh
+   ```bash
+   cd linquest
    npm install
    ```
 
-   or
+3. Set up environment variables:
+   - Copy the `.env.example` file to `.env` and fill in the necessary details.
 
-   ```sh
-   yarn install
-   ```
+4. Run the development server:
 
-3. Set up your PostgreSQL database and update the connection settings in the `.env` file.
-
-4. Run the development server
-
-   ```sh
+   ```bash
    npm run dev
    ```
 
-   or
+## Scripts
 
-   ```sh
-   yarn dev
-   ```
-
-5. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-## Usage
-
-Explore the various features such as taking lessons, practicing, viewing the leaderboard, and managing your profile. Admins can access the dashboard for managing users and content.
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the application for production.
+- `npm run start`: Starts the production server.
+- `npm run lint`: Runs the linter.
+- `npm run db:push`: Pushes database schema changes.
+- `npm run db:seed`: Seeds the database with initial data.
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Contributions are welcome! Please read the contributing guide to learn how you can contribute to Linquest.
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_twitter) - <your_email@example.com>
-
-Project Link: [https://github.com/yourusername/Linquest](https://github.com/yourusername/Linquest)
+This project is licensed under the MIT License - see the LICENSE file for details.
