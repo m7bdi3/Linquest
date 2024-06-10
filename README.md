@@ -1,6 +1,6 @@
-# Questr Language Learning App
+# Linquest Language Learning App
 
-Questr is a dynamic language learning application designed to make language acquisition engaging and fun. With a plethora of features ranging from AI voices to interactive quests, Questr ensures an immersive learning experience for users of all levels.
+Linquest is a dynamic language learning application designed to make language acquisition engaging and fun. With a plethora of features ranging from AI voices to interactive quests, Linquest ensures an immersive learning experience for users of all levels.
 
 ## Tech Stack
 
@@ -55,7 +55,7 @@ Make sure you have the following installed:
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/yourusername/questr.git
+   git clone https://github.com/yourusername/Linquest.git
    ```
 
 2. Install NPM packages
@@ -108,4 +108,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - [@your_twitter](https://twitter.com/your_twitter) - <your_email@example.com>
 
-Project Link: [https://github.com/yourusername/questr](https://github.com/yourusername/questr)
+Project Link: [https://github.com/yourusername/Linquest](https://github.com/yourusername/Linquest)
