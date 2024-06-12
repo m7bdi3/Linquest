@@ -52,6 +52,7 @@ const config = {
           DEFAULT: "var(--card)",
           foreground: "var(--card-foreground)",
         },
+        
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -67,25 +68,30 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "reveal": {
+        reveal: {
           "0%": { transform: "translateY(-200px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
         "reveal-image": {
-          '0%': { opacity: "0", transform: 'translateX(100px)' },
-          '100%': { opacity: "1", transform: 'translateX(0)' },
+          "0%": { opacity: "0", transform: "translateX(100px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
         },
         fadeIn: {
-          '0%': { opacity: '0', transform: 'translateY(20px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "loop-vertically": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(-50%)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "reveal": "reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1)",
-        "reveal-image": 'reveal-image 1s ease-in forwards',
-        "fadeIn": 'fadeIn 1s ease-out forwards',
+        reveal: "reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1)",
+        "reveal-image": "reveal-image 1s ease-in forwards",
+        fadeIn: "fadeIn 1s ease-out forwards",
+        "loop-vertically": "loop-vertically 30s linear infinite",
       },
     },
   },
