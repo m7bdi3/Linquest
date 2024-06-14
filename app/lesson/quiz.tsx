@@ -191,13 +191,19 @@ export const Quiz = ({
     <>
       {incorrectAudio}
       {correctAudio}
-      <Header hearts={hearts} percentage={percentage} hasActiveSub={!!userSub?.isActive} />
+      <Header
+        hearts={hearts}
+        percentage={percentage}
+        hasActiveSub={!!userSub?.isActive}
+      />
       <div className="flex-1 ">
         <div className="h-full flex items-center justify-center">
-          <div className="lg:min-h-[350px] lg:w-[600px] w-full px-6 lg:px-0 flex flex-col gap-y-12">
-            <h1 className="text-lg lg:text-3xl text-center lg:text-start font-bold text-neutral-700">
-              <p>{title}</p>
-            </h1>
+          <div className="lg:min-h-[350px] lg:w-[600px] w-full px-6 lg:px-0 flex flex-col gap-y-12 justify-center ">
+            <div className="w-full flex items-center justify-center">
+              <h1 className="text-lg md:text-xl lg:text-3xl lg:text-start font-bold text-neutral-700 p-4 rounded-md">
+                {title}
+              </h1>
+            </div>
             <div>
               {challenge.type === "ASSIST" && (
                 <QuestionBubble question={challenge.question} />

@@ -22,12 +22,12 @@ const buttonVariants = cva(
           "bg-rose-500 text-primary-foreground border-rose-600 border-b-4 active:border-b-0 hover:bg-rose-500/90",
         dangerOutline: "bg-white text-rose-500 hover:bg-slate-100",
         super:
-          "bg-indigo-500 text-primary-foreground border-indigo-600 border-b-4 active:border-b-0 hover:bg-indigo-500/90",
+          "bg-[#F8A95F] text-primary-foreground border-[#8B6D51] border-b-4 active:border-b-0 hover:bg-[#8B6D51]",
         superOutline: "bg-white text-indigo-500 hover:bg-slate-100",
         sidebar:
           "bg-transparent text-slate-500 border-transparent border-2 hover:bg-slate-100 transition-none",
         sidebarOutline:
-          "bg-sky-500/15 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] border-sky-300 border-2 hover:bg-sky-500/20 transition-none",
+          "bg-[#5090A1]/15 text-neutral-600  hover:bg-[#5090A1]/20 transition-none",
         homePage:
           "bg-white background-clip border-2 rounded-full text-xl font-extrabold text-center text-[#f8a95f]",
         homePageOutline:

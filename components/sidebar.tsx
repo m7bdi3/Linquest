@@ -2,7 +2,13 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { SidebarItem } from "./sidebar-items";
-import { GoalIcon, HomeIcon, Loader, LogOut, Medal, ShoppingBasketIcon, StampIcon, User2Icon } from "lucide-react";
+import {
+  GoalIcon,
+  HomeIcon,
+  Loader,
+  Medal,
+  ShoppingBasketIcon,
+} from "lucide-react";
 import { ClerkLoaded, ClerkLoading, UserButton } from "@clerk/nextjs";
 type Props = {
   className: string;
@@ -27,35 +33,35 @@ export const Sidebar = ({ className }: Props) => {
       <div className="flex flex-col gap-y-2 flex-1 w-full justify-between">
         <div>
           <SidebarItem
-            icon={<HomeIcon className="w-7 h-7 text-[#f8a95f]" />}
+            icon={<HomeIcon className="w-7 h-7 text-[#F8A95F]" />}
             label="Learn"
             href="/learn"
           />
           <SidebarItem
-            icon={<Medal className="w-7 h-7 text-[#f8a95f]" />}
+            icon={<Medal className="w-7 h-7 text-[#F8A95F]" />}
             label="Leaderboard"
             href="/leaderboard"
           />
           <SidebarItem
-            icon={<GoalIcon className="w-7 h-7 text-[#f8a95f]" />}
+            icon={<GoalIcon className="w-7 h-7 text-[#F8A95F]" />}
             label="quests"
             href="/quests"
           />
           <SidebarItem
-            icon={<ShoppingBasketIcon className="w-7 h-7 text-[#f8a95f]" />}
+            icon={<ShoppingBasketIcon className="w-7 h-7 text-[#F8A95F]" />}
             label="shop"
             href="/shop"
           />
         </div>
 
-       <div className="p-4">
-<ClerkLoading>
-    <Loader className="h-5 w-5 texxt-muted-foreground animate-spin"/>
-</ClerkLoading>
-<ClerkLoaded>
-    <UserButton afterSignOutUrl="/"/>
-</ClerkLoaded>
-       </div>
+        <div className="p-4">
+          <ClerkLoading>
+            <Loader className="h-5 w-5 texxt-muted-foreground animate-spin" />
+          </ClerkLoading>
+          <ClerkLoaded>
+            <UserButton afterSignOutUrl="/" />
+          </ClerkLoaded>
+        </div>
       </div>
     </div>
   );

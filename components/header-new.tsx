@@ -16,33 +16,35 @@ export const Header = () => {
     { src: "/es.svg", alt: "Spanish" },
     { src: "/fr.svg", alt: "French" },
     { src: "/sa.svg", alt: "Arabic" },
+    { src: "/us.svg", alt: "English" },
     { src: "/de.svg", alt: "German" },
     { src: "/it.svg", alt: "Italian" },
     { src: "/jp.svg", alt: "Japanese" },
     { src: "/kr.svg", alt: "Korean" },
     { src: "/ru.svg", alt: "Russian" },
     { src: "/cn.svg", alt: "Chinese" },
-    { src: "/pt.svg", alt: "Portuguese" },
-    { src: "/in.svg", alt: "Hindi" },
-    { src: "/nl.svg", alt: "Dutch" },
-    { src: "/se.svg", alt: "Swedish" },
-    { src: "/no.svg", alt: "Norwegian" },
-    { src: "/fi.svg", alt: "Finnish" },
     { src: "/tr.svg", alt: "Turkish" },
-    { src: "/pl.svg", alt: "Polish" },
-    { src: "/hu.svg", alt: "Hungarian" },
     { src: "/gr.svg", alt: "Greek" },
     { src: "/cz.svg", alt: "Czech" },
-    { src: "/ro.svg", alt: "Romanian" },
-    { src: "/bg.svg", alt: "Bulgarian" },
-    { src: "/th.svg", alt: "Thai" },
-    { src: "/vn.svg", alt: "Vietnamese" },
-    { src: "/my.svg", alt: "Malay" },
     { src: "/id.svg", alt: "Indonesian" },
-    { src: "/ph.svg", alt: "Tagalog" },
-    { src: "/bd.svg", alt: "Bengali" },
-    { src: "/ir.svg", alt: "Persian" },
-];
+  ];
+
+  const images2 = [
+    { src: "/kr.svg", alt: "Korean" },
+    { src: "/ru.svg", alt: "Russian" },
+    { src: "/cn.svg", alt: "Chinese" },
+    { src: "/tr.svg", alt: "Turkish" },
+    { src: "/gr.svg", alt: "Greek" },
+    { src: "/cz.svg", alt: "Czech" },
+    { src: "/sa.svg", alt: "Arabic" },
+    { src: "/id.svg", alt: "Indonesian" },
+    { src: "/es.svg", alt: "Spanish" },
+    { src: "/fr.svg", alt: "French" },
+    { src: "/us.svg", alt: "English" },
+    { src: "/de.svg", alt: "German" },
+    { src: "/it.svg", alt: "Italian" },
+    { src: "/jp.svg", alt: "Japanese" },
+  ];
   return (
     <main className="flex flex-col lg:flex-row md:flex-row h-full w-full justify-between items-center max-h-[70%] lg:max-h-full md:max-h-full">
       <div className="h-full flex flex-col justify-center max-h-fit lg:max-w-[60%] lg:ml-[8%] md:max-w-[30%] md:ml-[8%] text-center lg:text-start md:text-start gap-y-4">
@@ -88,9 +90,12 @@ export const Header = () => {
       </div>
       <div className="h-full w-full lg:max-w-[30%] md:max-w-[40%] max-h-[40%] lg:max-h-full md:max-h-full overflow-hidden p-12 lg:p-0 md:p-0">
         <div className="flex w-full h-full gap-x-2">
-          <div className="-mt-[120%] flex flex-col animate-loop-vertically gap-4 self-center">
+          <div className="-mt-[120%] flex flex-col hover:animate-loop-vertically gap-4 self-center">
             {images1.map((image, index) => (
-              <div key={index} className="flex animate-loop-vertically flex-col gap-6">
+              <div
+                key={index}
+                className="flex hover:animate-loop-vertically flex-col gap-6"
+              >
                 <div className="relative w-full ">
                   <Image
                     className=" inset-0 object-cover rounded-md shadow-md"
@@ -103,9 +108,12 @@ export const Header = () => {
               </div>
             ))}
           </div>
-          <div className="-mt-[120%] flex flex-col animate-loop-vertically gap-4 self-center">
-            {images1.reverse().map((image, index) => (
-              <div key={index} className="flex animate-loop-vertically flex-col gap-6">
+          <div className="flex flex-col hover:animate-loop-vertically gap-4 self-center">
+            {images2.map((image, index) => (
+              <div
+                key={index}
+                className="flex hover:animate-loop-vertically flex-col gap-6"
+              >
                 <div className="relative w-full ">
                   <Image
                     className=" inset-0 object-cover rounded-md shadow-md"

@@ -24,7 +24,7 @@ export const UserProgress = ({
           <Image
             src={activeCourse.imageSrc}
             alt={activeCourse.title}
-            className="rounded-md border "
+            className="rounded-full border-4 border-[#f8a95f] "
             width={32}
             height={32}
           />
@@ -34,8 +34,8 @@ export const UserProgress = ({
         <Button variant={"ghost"} className="text-[#f8a95f]">
           <Image
             src="/points.svg"
-            height={28}
-            width={28}
+            height={32}
+            width={32}
             alt="points"
             className="mr-2"
           />
@@ -46,10 +46,10 @@ export const UserProgress = ({
         <Button variant={"ghost"} className="text-rose-500">
           <Image
             src="/heart.svg"
-            height={22}
-            width={22}
+            height={32}
+            width={32}
             alt="heart"
-            className="mr-2"
+            className="mr-2 shrink-0"
           />
           {hasActiveSub ? (
             <InfinityIcon className="h-4 w-4 stroke-3" />
